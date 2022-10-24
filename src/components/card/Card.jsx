@@ -1,6 +1,6 @@
 import React from "react";
 import bALogo from "../../images/logo.svg"
-import emailInput from "../input/Input";
+import emailInput from "../input/EmailInput";
 import desktopImg from "../../images/hero-desktop.jpg"
 import mobileImg from "../../images/hero-mobile.jpg"
 
