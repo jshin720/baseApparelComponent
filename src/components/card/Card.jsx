@@ -1,6 +1,6 @@
 import React from "react";
 import bALogo from "../../images/logo.svg"
-import emailInput from "../input/EmailInput";
+import EmailInput from "../input/EmailInput";
 import desktopImg from "../../images/hero-desktop.jpg"
 import mobileImg from "../../images/hero-mobile.jpg"
 
@@ -32,7 +32,7 @@ function Card() {
           </p>
         </div>
         <div>
-          <input type="email"></input>
+          <EmailInput/>
         </div>
       </main>
     </div>

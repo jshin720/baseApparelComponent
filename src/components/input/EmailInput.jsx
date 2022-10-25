@@ -1,28 +1,32 @@
 import React, { useState, useEffect } from 'react'
 
-function emailInput() {
-  const [hasError, setHasError] = useState(false);
-  const [emailLength, setEmailLength] = useState(0);
-  const [correctFormat, setCorrectFormat] = useState(true);
+function EmailInput() {
+  const [error, setError] = useState(null);
+  const [message, setMessage] = useState("");
 
-  const checkFormat = () => {
-
+  const isValidEmail = (email) => {
+    return setError(/\S+@\S+\.\S+/.test(email.target.value));
   };
 
-  const checkLength = () => {
-
+  const handleChange = (e) => {
+    console.log("e", e)
+    if (!isValidEmail(e.target.value)) {
+      setMessage("Email is Invalid")
+    } 
   }
-
-  const goodEmail = () => {
-
-  }
+  
+  console.log("error", error)
+  console.log("messgae", message)
 
   return (
     <>
-    <form></form>
-      <input type="email" className="email-form" value="email"/>
+    <div className="email-container">
+      <input type="email" className="email-form" value="email" onChange={handleChange}/>
+      {error ? <h4 style={{color: "red"}}>{message} </h4>  : null}
+    </div>
+
     </>
   )
 }
 
-export default emailInput;
+export default EmailInput;
