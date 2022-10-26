@@ -1,4 +1,6 @@
 import React, { useState, useEffect } from 'react'
+import arrow from "../../images/icon-arrow.svg";
+import errorIcon from "../../images/icon-error.svg";
 
 function EmailInput() {
   const [error, setError] = useState(false);
@@ -26,6 +28,7 @@ function EmailInput() {
     <>
     <div className="email-container">
       <input type="email" className="email-form" value={email} onChange={handleChange} placeholder="email"/>
+      
       {error ? <h4 style={{color: "red"}}>{message} </h4>  : null}
     </div>
 
