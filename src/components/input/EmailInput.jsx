@@ -28,7 +28,8 @@ function EmailInput() {
     <>
     <div className="email-container">
       <input type="email" className="email-form" value={email} onChange={handleChange} placeholder="email"/>
-      
+      <img src={arrow} alt="" />
+      <img src={errorIcon} alt="" />
       {error ? <h4 style={{color: "red"}}>{message} </h4>  : null}
     </div>
 
