@@ -14,7 +14,7 @@ function EmailInput() {
   const handleChange = (e) => {
     setEmail(e.target.value);
     if (!isValidEmail(email)) {
-      setMessage("Email is Invalid");
+      setMessage("Please provide a valid email");
     }
   };
 
@@ -25,7 +25,7 @@ function EmailInput() {
 
   return (
     <>
-      <div className="email-container">
+      <form className="email-container">
         <input
           type="email"
           className="email-form"
@@ -34,12 +34,12 @@ function EmailInput() {
           placeholder="Email Address"
           required
         />
+        <img src={errorIcon} alt="errorIcon" />
         <button type="submit">
-          <img src={arrow} alt="" />
+        <img src={arrow} alt="arrow" />
         </button>
-        <img src={errorIcon} alt="" />
-        {error ? <h4 style={{ color: "red" }}>{message} </h4> : null}
-      </div>
+        {error ? <small style={{ color: "red" }}>{message} </small> : null}
+      </form>
     </>
   );
 }

@@ -1,0 +1,18 @@
+.card-container {
+  display: flex;
+  width: 100%;
+  /* min-height: 100vh; */
+  border: 2px solid blueviolet;
+}
+
+.left {
+  width: 60%;
+}
+
+.right {
+  width: 40%;
+}
+.desktop-img {
+  object-fit: fit;
+  
+}
