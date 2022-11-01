@@ -12,7 +12,13 @@
 .right {
   width: 40%;
 }
+.main-img {
+  width: 100%;
+  border: 2px solid red;
+}
 .desktop-img {
-  object-fit: fit;
-  
+  object-fit: cover;
+  width: auto;
+  height: auto;
+  padding: .58em;
 }
