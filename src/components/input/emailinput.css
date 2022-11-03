@@ -1,9 +1,9 @@
 .email-container {
-
+border: 2px solid green;
 }
 
 .email-form {
-
+  border: 2px solid pink;
 }
 
 
