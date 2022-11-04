@@ -1,9 +1,11 @@
 .email-container {
 border: 2px solid green;
+padding: .2em 
 }
 
 .email-form {
   /* border: 2px solid pink; */
+  
 }
 
 
