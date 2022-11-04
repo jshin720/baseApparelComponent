@@ -34,9 +34,9 @@ function EmailInput() {
           placeholder="Email Address"
           required
         />
-        <img src={errorIcon} alt="errorIcon" />
+        <img src={errorIcon} alt="errorIcon"  className="errorIcon"/>
         <button type="submit">
-        <img src={arrow} alt="arrow" />
+        <img src={arrow} alt="arrow" className="arrowIcon"/>
         </button>
         {error ? <small style={{ color: "red" }}>{message} </small> : null}
       </form>
