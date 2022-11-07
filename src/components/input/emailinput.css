@@ -1,10 +1,10 @@
 .email-container {
-/* border: 2px solid green; */
-padding: .2em 
+  border: 2px solid green;
+  padding: 0.2em;
 }
 
 .email-form {
-  /* border: 2px solid pink; */
+  border: 2px solid pink;
   
 }
 
