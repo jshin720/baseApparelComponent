@@ -15,7 +15,7 @@
 .main-img {
   width: 100%;
   border: 2px solid red;
-  object-fit: cover;
+  /* object-fit: cover; */
 }
 .desktop-img {
   object-fit: cover;
