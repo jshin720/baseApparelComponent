@@ -1,26 +1,81 @@
-.card-container {
+.main-card-container {
   display: flex;
   width: 100%;
   min-height: 100vh;
-  border: 2px solid blueviolet;
+  /* border: 2px solid blueviolet; */
 }
+
+/* .card-container {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  border: 2px solid green;
+} */
 
 .left {
-  width: 60%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 55%;
+  height: 100%;
+  align-items: left;
+  padding: 0 40px;
+  border: 2px solid green;
 }
 
+.logo {
+  margin: 60px 0;
+  width: 300px;
+  border: 2px solid green;
+}
+
+.header {
+  /* display: flex; */
+  text-transform: uppercase;
+  /* flex-direction: column; */
+  /* align-items: flex-start; */
+  letter-spacing: 10px;
+  font-size: 60px;
+  /* font-weight: 700 ; */
+  color: hsl(0, 6%, 24%);
+  border: 2px solid green;
+}
+
+.header .were-group {
+  /* padding: 0 15px 0 0; */
+  color: hsl(0, 36%, 70%);
+  font-weight: 200;
+}
+
+.header .cs-group {
+  font-weight: 700;
+}
+
+.intro {
+  padding: 1em 5em 1em 0;
+  color: hsl(0, 36%, 70%);
+  /* letter-spacing: 1px; */
+  line-height: 26px;
+}
+
+
+
 .right {
-  width: 40%;
+  width: 45%;
+  height: 100%;
+  border: 2px solid red;
 }
 .main-img {
   width: 100%;
-  border: 2px solid red;
-  object-fit: cover;
+  /* height: 100%; */
+  /* border: 2px solid red; */
+  object-fit: fill;
 }
+
 .desktop-img {
-  object-fit: cover;
+  /* object-fit: fit; */
   width: auto;
   height: auto;
-  padding: .5em;
+  /* padding: .5em; */
   /* border: 2px solid green; */
 }
