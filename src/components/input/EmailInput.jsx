@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import arrow from "../../images/icon-arrow.svg";
 import errorIcon from "../../images/icon-error.svg";
+import "./emailinput.css";
 
 function EmailInput() {
   const [error, setError] = useState(false);
@@ -34,12 +35,16 @@ function EmailInput() {
           placeholder="Email Address"
           required
         />
-        <img src={errorIcon} alt="errorIcon"  className="errorIcon"/>
         <button type="submit">
-        <img src={arrow} alt="arrow" className="arrowIcon"/>
+          <img src={arrow} alt="arrow" className="arrowIcon" />
         </button>
-        <small>Please provide a valid email</small>
-        {error ? <small style={{ color: "red" }}>{message} </small> : null}
+        {/* <small className="email-message">Please provide a valid email</small> */}
+        {!error ? (
+          <small className="error-message" style={{ color: "red" }}>
+            <img src={errorIcon} alt="errorIcon" className="errorIcon" />
+            {message}{" "}
+          </small>
+        ) : null}
       </form>
     </>
   );

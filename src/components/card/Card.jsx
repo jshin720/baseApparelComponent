@@ -33,7 +33,7 @@ function Card() {
           <img src={desktopImg} alt="desktop" className="desktop-img" />
           <source
             media="(min-width: 768px)"
-            srcset={mobileImg}
+            srcSet={mobileImg}
             alt="mobile"
             className="mobile-img"
           />
