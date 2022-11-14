@@ -38,6 +38,7 @@ function EmailInput() {
         <button type="submit">
         <img src={arrow} alt="arrow" className="arrowIcon"/>
         </button>
+        <small>Please provide a valid email</small>
         {error ? <small style={{ color: "red" }}>{message} </small> : null}
       </form>
     </>
