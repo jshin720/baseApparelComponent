@@ -40,11 +40,13 @@ function EmailInput() {
         </button>
         {/* <small className="email-message">Please provide a valid email</small> */}
         {!error ? (
-          <small className="error-message" style={{ color: "red" }}>
+          <small className="error-message error-active" style={{ color: "red" }}>
             <img src={errorIcon} alt="errorIcon" className="errorIcon" />
             {message}{" "}
           </small>
-        ) : null}
+        ) : 
+          null
+        }
       </form>
     </>
   );

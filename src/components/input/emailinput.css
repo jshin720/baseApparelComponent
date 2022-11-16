@@ -1,6 +1,6 @@
 .email-container {
   width: 100%;
-  border: 2px solid pink;
+  /* border: 2px solid pink; */
   position: relative;
   
 }
@@ -28,6 +28,10 @@ button {
 }
 
 .errorIcon {
+  display: none;
+}
+
+.error-active {
   position: absolute;
   top: 16px;
   right: 40px;
@@ -35,7 +39,7 @@ button {
   height: 20px;
 }
 
-.error-message {
+small {
   /* display: block; */
   margin: 4em 1.1em;
   /* border: 2px solid red; */
